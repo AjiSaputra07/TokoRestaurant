@@ -5,25 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import com.example.aplikasi_restaurant.databinding.Fragment4Binding
+import androidx.navigation.fragment.findNavController
+import com.example.aplikasi_restaurant.databinding.FragmentMenuDeskripsiBinding
 
-class Fragment4 : Fragment() {
-    private lateinit var binding: Fragment4Binding
+
+class MenuDeskripsi : Fragment() {
+    private lateinit var binding: FragmentMenuDeskripsiBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = Fragment4Binding.inflate(layoutInflater, container, false)
+        binding = FragmentMenuDeskripsiBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnLogout.setOnClickListener {
-            Toast.makeText(context, "Berhasil Logout", Toast.LENGTH_SHORT).show()
+        // Memberikan aksi pada menu kembali fragment
+        binding.kembali.setOnClickListener{
+            this.findNavController()
+                .navigate(R.id.action_menuDeskripsi_to_fragment1)
         }
     }
+
 }

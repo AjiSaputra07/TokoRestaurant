@@ -4,17 +4,17 @@
     <item
         android:id="@+id/fragment1"
         android:title="Makanan"
-        android:icon="@drawable/baseline_fastfood_24"/>
+        android:icon="@drawable/baseline_fastfood"/>
     <item
         android:id="@+id/fragment2"
         android:title="Minuman"
-        android:icon="@drawable/baseline_local_drink_24"/>
+        android:icon="@drawable/baseline_drink"/>
     <item
-        android:id="fragment3"
+        android:id="@+id/fragment3"
         android:title="Pesanan"
-        android:icon="@drawable/baseline_shopping_basket_24"/>
+        android:icon="@drawable/baseline_cart"/>
     <item
-        android:id="fragment4"
-        android:icon="@drawable/baseline_supervised_user_circle_24"
-        android:title="User" />
+        android:id="@+id/fragment4"
+        android:title="User"
+        android:icon="@drawable/baseline_circle"/>
 </menu>

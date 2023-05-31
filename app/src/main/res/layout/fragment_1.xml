@@ -4,65 +4,202 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment1">
+    tools:context=".Fragment1"
+    android:background="#F5EBDC">
 
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cheese Burger"
+        android:background="#D62300"
+        android:fontFamily="@font/burger_extra"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Burger Bangor"
         android:textColor="@color/black"
-        android:textSize="13dp"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="41dp" />
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/Group1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rp.15.000"
-        android:textColor="@color/black"
-        android:textSize="13dp"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="70dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/border_radius">
+
+        <ImageView
+            android:id="@+id/chesseburger"
+            android:layout_width="137dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/chesse"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="41dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/burger_extra"
+                android:text="Cheese Burger"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/burger_extra"
+                android:text="Rp 15.000,-"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/view_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/burger_extra"
+                android:text="View Detail"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Group2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Whopper Jr"
-        android:textSize="13dp"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="144dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Group1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/border_radius">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/whopperJr"
+            android:layout_width="137dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/whopper"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="41dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/burger_extra"
+                android:text="Whopper Jr"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/burger_extra"
+                android:text="Rp 15.000,-"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/view_detail2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/burger_extra"
+                android:text="View Detail"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Group3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rp15.000"
-        android:textSize="13dp"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="199dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Group2"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/border_radius">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="137dp"
-        android:layout_height="75dp"
-        android:src="@drawable/chesse"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="41dp" />
+        <ImageView
+            android:id="@+id/mushroom"
+            android:layout_width="137dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/mushroom"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="41dp"/>
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="137dp"
-        android:layout_height="78dp"
-        android:src="@drawable/whopper"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="143dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/burger_extra"
+                android:text="Mushroom"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/burger_extra"
+                android:text="Rp 15.000,-"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/view_detail3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/burger_extra"
+                android:text="View Detail"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

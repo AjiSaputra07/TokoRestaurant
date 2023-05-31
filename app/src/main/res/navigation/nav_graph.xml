@@ -9,12 +9,35 @@
         android:id="@+id/fragment1"
         android:name="com.example.aplikasi_restaurant.Fragment1"
         android:label="fragment_1"
-        tools:layout="@layout/fragment_1" />
+        tools:layout="@layout/fragment_1" >
+        <action
+            android:id="@+id/action_fragment1_to_menuDeskripsi"
+            app:destination="@id/menuDeskripsi" />
+        <action
+            android:id="@+id/action_fragment1_to_menuDeskirpsiWhopper"
+            app:destination="@id/menuDeskirpsiWhopper" />
+        <action
+            android:id="@+id/action_fragment1_to_menuDeskripsiMushroom"
+            app:destination="@id/menuDeskripsiMushroom" />
+        <action
+            android:id="@+id/action_fragment1_to_menuDeskripsiMushroom2"
+            app:destination="@id/menuDeskripsiMushroom" />
+    </fragment>
     <fragment
         android:id="@+id/fragment2"
         android:name="com.example.aplikasi_restaurant.Fragment2"
         android:label="fragment_2"
-        tools:layout="@layout/fragment_2" />
+        tools:layout="@layout/fragment_2" >
+        <action
+            android:id="@+id/action_fragment2_to_menuDespskripsiCocacola"
+            app:destination="@id/menuDespskripsiCocacola" />
+        <action
+            android:id="@+id/action_fragment2_to_menuDeskripsiFloatCola"
+            app:destination="@id/menuDeskripsiFloatCola" />
+        <action
+            android:id="@+id/action_fragment2_to_menuDeskripsiAdes"
+            app:destination="@id/menuDeskripsiAdes" />
+    </fragment>
     <fragment
         android:id="@+id/fragment3"
         android:name="com.example.aplikasi_restaurant.Fragment3"
@@ -25,4 +48,58 @@
         android:name="com.example.aplikasi_restaurant.Fragment4"
         android:label="fragment_4"
         tools:layout="@layout/fragment_4" />
+    <fragment
+        android:id="@+id/menuDeskripsi"
+        android:name="com.example.aplikasi_restaurant.MenuDeskripsi"
+        android:label="fragment_menu_deskripsi"
+        tools:layout="@layout/fragment_menu_deskripsi" >
+        <action
+            android:id="@+id/action_menuDeskripsi_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDeskirpsiWhopper"
+        android:name="com.example.aplikasi_restaurant.menuDeskirpsiWhopper"
+        android:label="fragment_menu_deskirpsi_whopper"
+        tools:layout="@layout/fragment_menu_deskirpsi_whopper" >
+        <action
+            android:id="@+id/action_menuDeskirpsiWhopper_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDeskripsiMushroom"
+        android:name="com.example.aplikasi_restaurant.menuDeskripsiMushroom"
+        android:label="fragment_menu_deskripsi_mushroom"
+        tools:layout="@layout/fragment_menu_deskripsi_mushroom" >
+        <action
+            android:id="@+id/action_menuDeskripsiMushroom_to_fragment1"
+            app:destination="@id/fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDespskripsiCocacola"
+        android:name="com.example.aplikasi_restaurant.menuDespskripsiCocacola"
+        android:label="fragment_menu_despskripsi_cocacola"
+        tools:layout="@layout/fragment_menu_despskripsi_cocacola" >
+        <action
+            android:id="@+id/action_menuDespskripsiCocacola_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDeskripsiFloatCola"
+        android:name="com.example.aplikasi_restaurant.menuDeskripsiFloatCola"
+        android:label="fragment_menu_deskripsi_float_cola"
+        tools:layout="@layout/fragment_menu_deskripsi_float_cola" >
+        <action
+            android:id="@+id/action_menuDeskripsiFloatCola_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDeskripsiAdes"
+        android:name="com.example.aplikasi_restaurant.menuDeskripsiAdes"
+        android:label="fragment_menu_deskripsi_ades"
+        tools:layout="@layout/fragment_menu_deskripsi_ades" >
+        <action
+            android:id="@+id/action_menuDeskripsiAdes_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
 </navigation>
